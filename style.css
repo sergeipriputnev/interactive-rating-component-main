@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol,li{
+  list-style: none;
+}
+
+img{
+  vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, 
+body{
+  height: 100%;
+  line-height: 1;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+:root{
+  --primary-color: hsl(25, 97%, 53%);
+  --color-100: hsl(216, 12%, 8%);
+  --color-150:hsl(215,20%,15%);
+  --color-200:hsl(213, 19%, 20%);
+  --color-300:hsl(216, 12%, 54%);
+  --color-400:hsl(217, 12%, 63%);
+  --color-500:hsl(0, 0%, 100%);
+}
+
+body{
+  background-color: var(--color-100);
+}
+
+.main{
+  width: 415px;
+  height: 415px;
+  background-color: var(--color-150);
+  border-radius: 30px;
+  margin: auto;
+  position: relative;
+  top:50vh;
+  transform: translateY(-50%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars{
+  display:flex;
+  /* justify-content: center; */
+  margin:auto;
+}
+
+.stars.invisible{
+  visibility: hidden;
+}
+
+.star{
+  height: 45px;
+  width: 45px;
+  background-color:var(--color-200);
+  border-radius: 50%;
+  display: flex;
+  margin: 0px 10px;
+}
+
+.star img{
+  margin:auto;
+  width: 15px;
+}
+
+h1{
+  font-weight: 700;
+  margin-top: 35px;
+  color:var(--color-500);
+  font-size:1.7rem ;
+}
+
+p{
+  margin-top: 30px;
+  color: var(--color-400);
+  line-height: 1.5rem;
+}
+
+.buttons{
+  margin-top: 30px;;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star.number{
+  color: var(--color-400);
+  justify-content: center;
+  align-items: center;
+}
+
+.star.number:hover{
+  cursor: pointer;
+  color: var(--color-500);
+  background-color: var(--primary-color);
+  transition: background-color 0.2s;
+}
+
+.star.number.selected{
+  background-color: var(--color-400);
+  color: var(--color-500);
+  cursor:default;
+}
+
+.submit{
+  background-color: var(--primary-color);
+  color:var(--color-500);
+  height: 45px;
+  border-radius: 24px;
+  text-transform:uppercase;
+  font-weight: 700;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.2rem;
+margin-top: 30px;
+}
+
+.submit:hover{
+  background-color: var(--color-500);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.main.thanks{
+align-items: center;
+}
+
+.result{
+  background-color: var(--color-200);
+  color: var(--primary-color);
+  padding: 3px 15px;
+  border-radius:15px ;
+  justify-content: space-between;
+}
+
+.non-visible{
+  display: none;
+}
